@@ -35,10 +35,11 @@ class Impuesto {
   }
 
   setDeducciones(newDeducciones) {
-    this.Deducciones = newDeducciones;
+    this.deducciones = newDeducciones;
   }
 }
+const impuesto1 = new Impuesto(4000000, 2000000);
+const cliente1 = new Cliente('Alfredo', impuesto1);
 
-const cliente1 = new Cliente('Alfredo', new Impuesto(4000000, 2000000));
-
+console.log(cliente1);
 console.log(cliente1.calcularImpuesto());
