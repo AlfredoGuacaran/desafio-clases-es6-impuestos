@@ -1,43 +1,6 @@
-class Cliente {
-  constructor(nombre, impuesto) {
-    this.nombre = nombre;
-    this.impuesto = impuesto;
-  }
+import Cliente from './cliente.js';
+import Impuesto from './impuesto.js';
 
-  getNombre() {
-    return this.nombre;
-  }
-
-  setNombre(newNombre) {
-    this.nombre = newNombre;
-  }
-
-  calcularImpuesto() {
-    return (this.impuesto.montoBrutoAnual - this.impuesto.deducciones) * 1.21;
-  }
-}
-
-class Impuesto {
-  constructor(montoBrutoAnual, deducciones) {
-    this.montoBrutoAnual = montoBrutoAnual;
-    this.deducciones = deducciones;
-  }
-
-  getMontoBrutoAnual() {
-    return this.montoBrutoAnual;
-  }
-
-  setMontoBrutoAnual(newMontoBruto) {
-    this.montoBrutoAnual = newMontoBruto;
-  }
-  getDeducciones() {
-    return this.deducciones;
-  }
-
-  setDeducciones(newDeducciones) {
-    this.deducciones = newDeducciones;
-  }
-}
 const impuesto1 = new Impuesto(4000000, 2000000);
 const cliente1 = new Cliente('Alfredo', impuesto1);
 
