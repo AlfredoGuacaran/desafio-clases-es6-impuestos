@@ -13,6 +13,6 @@ export default class Cliente {
   }
 
   calcularImpuesto() {
-    return (this.impuesto.montoBrutoAnual - this.impuesto.deducciones) * 1.21;
+    return (this.impuesto.montoBrutoAnual - this.impuesto.deducciones) * 0.21;
   }
 }
